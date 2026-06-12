@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felicia Greiff</title>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'EB Garamond', Georgia, serif;
+  background: #fff;
+  color: #111;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 2.5rem;
+  border-bottom: 1px solid #e4e4e4;
+}
+.nav-name { font-size: 1.05rem; font-weight: 400; text-decoration: none; color: #111; }
+.nav-right { display: flex; align-items: center; gap: 2rem; }
+.nav-right a { font-size: 0.95rem; color: #111; text-decoration: none; }
+.nav-right a:hover { text-decoration: underline; }
+
+.hero {
+  padding: 6rem 2.5rem 2rem;
+  max-width: 860px;
+}
+.hero-text {
+  font-size: clamp(2rem, 3.2vw, 2.55rem);
+  line-height: 1.32;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.hero-text strong { font-weight: 500; }
+
+hr { border: none; border-top: 1px solid #e4e4e4; margin: 0 2.5rem; }
+
+.body-text {
+  padding: 3.5rem 2.5rem;
+  max-width: 820px;
+  font-size: clamp(1.55rem, 2.4vw, 2rem);
+  line-height: 1.5;
+  color: #111;
+}
+.body-text p + p { margin-top: 1.5rem; }
+.body-text a { color: #111; }
+
+.exp-section { padding: 1rem 2.5rem 5rem; }
+
+.exp-item {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2.5rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+.exp-item:first-child { border-top: 1px solid #e4e4e4; }
+
+.exp-company {
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 0.25rem;
+}
+.exp-role {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.2rem;
+  font-style: italic;
+}
+.exp-years {
+  font-size: 0.82rem;
+  color: #aaa;
+  letter-spacing: 0.02em;
+}
+
+.exp-right {
+  padding-top: 0.3rem;
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  line-height: 1.78;
+  color: #333;
+}
+.exp-right p + p { margin-top: 1rem; }
+.exp-right a { color: #111; }
+
+.beliefs-section {
+  padding: 1rem 2.5rem 5rem;
+}
+.belief-item {
+  padding: 2.5rem 0;
+  border-bottom: 1px solid #e4e4e4;
+  max-width: 680px;
+}
+.belief-item:first-child { border-top: 1px solid #e4e4e4; }
+.belief-title {
+  font-size: clamp(1.3rem, 2vw, 1.6rem);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.belief-body {
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  line-height: 1.78;
+  color: #555;
+}
+
+.earlier {
+  padding: 2rem 2.5rem 3rem;
+  display: flex;
+  gap: 3rem;
+  align-items: baseline;
+  border-top: 1px solid #e4e4e4;
+}
+.earlier-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  color: #bbb;
+  white-space: nowrap;
+  font-style: italic;
+}
+.earlier-items {
+  font-size: 1rem;
+  color: #888;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.cta-section {
+  padding: 3.5rem 2.5rem 5.5rem;
+  border-top: 1px solid #e4e4e4;
+}
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+  font-weight: 400;
+  text-decoration: none;
+  color: #111;
+  border-bottom: 1.5px solid #111;
+  padding-bottom: 0.05rem;
+  transition: opacity 0.2s;
+}
+.cta-link:hover { opacity: 0.4; }
+
+.section-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #bbb;
+  margin-bottom: 2.5rem;
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#" class="nav-name">Felicia Greiff</a>
+  <div class="nav-right">
+    <a href="#contact">Contact Me</a>
+    <a href="https://linkedin.com/in/feliciagreiff" target="_blank">in</a>
+    <a href="https://x.com/feliciagreiff" target="_blank">&#x1D54F;</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <p class="hero-text">Felicia Greiff builds trust with audiences by building brands &#8212; trained as a journalist, she has spent her career convinced that the best way to do it is with a human voice, in copy, in design, and in every touchpoint.</p>
+</div>
+
+<hr>
+
+<div class="body-text">
+  <p>Felicia specializes in early and mid-stage B2B tech companies, where she builds content engines from the ground up &#8212; developing original perspectives, extracting ideas from founders and customers, and bringing them to market across formats and channels. She has held senior roles across content, brand, and communications. Currently, she&#8217;s taking on consulting clients. <a href="#contact">Get in touch.</a></p>
+</div>
+
+<hr>
+
+<div class="body-text">
+  <p>Her approach begins with research. She spends time where the audience spends their time, asking questions around company purpose: &#8220;Why do we exist?&#8221; and &#8220;What problem do we solve?&#8221; From there, she identifies content pillars and themes that serve the audience &#8212; using language that comes directly from them &#8212; to educate, entertain, drive engagement, and ultimately, serve business goals.</p>
+  <p>Her content philosophy is to glean as much value from every effort as possible, always keeping the audience in focus and writing in a way that makes for pleasant, straightforward reading.</p>
+</div>
+
+<hr>
+
+<div class="beliefs-section">
+  <p class="section-label">Beliefs</p>
+
+  <div class="belief-item">
+    <h3 class="belief-title">The reader comes first.</h3>
+    <p class="belief-body">Good content starts with the audience &#8212; their questions, their language, their attention. The brand&#8217;s message earns its place by serving them, not the other way around.</p>
+  </div>
+
+  <div class="belief-item">
+    <h3 class="belief-title">Writing builds trust.</h3>
+    <p class="belief-body">Content is a credibility exercise. Every piece is a small contract between writer and reader &#8212; and the brands that honor that contract consistently are the ones audiences return to.</p>
+  </div>
+
+  <div class="belief-item">
+    <h3 class="belief-title">Range makes the work better.</h3>
+    <p class="belief-body">Moving between journalism, PR, content strategy, and brand has never felt like a liability. Each discipline sharpens the others. Knowing how a story gets reported makes you a better marketer. Knowing how a brand thinks makes you a better editor.</p>
+  </div>
+
+  <div class="belief-item">
+    <h3 class="belief-title">Good writing breaks through.</h3>
+    <p class="belief-body">The central challenge of marketing has never changed: getting through to individual people in a noisy marketplace. Well-written, engaging content &#8212; whether it&#8217;s an email, a blog post, or a research report &#8212; remains one of the best tools for doing it.</p>
+  </div>
+
+  <div class="belief-item">
+    <h3 class="belief-title">Stay curious.</h3>
+    <p class="belief-body">The best marketers read widely, stay ahead of what&#8217;s been written, and always ask what should come next. Curiosity isn&#8217;t a personality trait &#8212; it&#8217;s a professional practice.</p>
+  </div>
+
+</div>
+
+<hr>
+
+<div class="exp-section">
+  <p class="section-label">Experience</p>
+
+  <div class="exp-item">
+    <div class="exp-left">
+      <div class="exp-company">Wisq</div>
+      <div class="exp-role">Head of Brand &amp; Content</div>
+      <div class="exp-years">2024&#8211;Present</div>
+    </div>
+    <div class="exp-right">
+      <p>Felicia returned to Wisq as Head of Brand and Content, owning company narrative, messaging, and editorial strategy across content, events, and executive communications. She partners with executives to shape thought leadership and external messaging, leads events strategy, and drives cross-functional alignment across Product, Sales, and Marketing.</p>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-left">
+      <div class="exp-company">Consulting</div>
+      <div class="exp-role">Independent</div>
+      <div class="exp-years">2023&#8211;Present</div>
+    </div>
+    <div class="exp-right">
+      <p>Felicia offers a range of marketing services &#8212; including content strategy, blog writing, social media strategy, virtual event coordination, and communications support &#8212; to early and mid-stage tech startups.</p>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-left">
+      <div class="exp-company">Wisq</div>
+      <div class="exp-role">Content Lead</div>
+      <div class="exp-years">2022&#8211;2023</div>
+    </div>
+    <div class="exp-right">
+      <p>On the Marketing team, Felicia led content marketing, PR, communications, social media strategy, executive branding, and brand marketing. Wisq was on a mission to make the workplace more human and empathetic through its social connection platform. She built the content function from the ground up, with assets including eBooks, blog posts, and other lead generation magnets that drove demand generation, and established the startup as a thought leader in the human resources space.</p>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-left">
+      <div class="exp-company">Terminal</div>
+      <div class="exp-role">Senior Content Marketing Manager</div>
+      <div class="exp-years">2021&#8211;2022</div>
+    </div>
+    <div class="exp-right">
+      <p>At Terminal, a job marketplace for global software engineers, Felicia led content, brand, and demand generation strategy across two distinct audiences: HR and engineering hiring leaders on the demand side, and engineers on the supply side. She built the editorial calendar, launched flagship research, produced a major virtual event, and managed the PR agency and external vendors.</p>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-left">
+      <div class="exp-company">Cadent</div>
+      <div class="exp-role">Director of Content Marketing</div>
+      <div class="exp-years">2018&#8211;2021</div>
+    </div>
+    <div class="exp-right">
+      <p>At Cadent, a connected TV advertising platform, Felicia was responsible for building trust and credibility in the brand as the independent, preferred ad tech partner to brand marketers. She led content and PR across North American and European divisions &#8212; including executive thought leadership, paid social, event sponsorships, and owned, earned, and paid content marketing activities.</p>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-left">
+      <div class="exp-company">Turn</div>
+      <div class="exp-role">Content Marketing Manager · Acquired by Amobee</div>
+      <div class="exp-years">2016&#8211;2018</div>
+    </div>
+    <div class="exp-right">
+      <p>At Turn, a programmatic advertising platform, Felicia spearheaded the content strategy, solidifying the company&#8217;s presence within the ad tech ecosystem. During the acquisition by Amobee, she oversaw PR efforts &#8212; managing social promotion, coordinating with Singtel offices globally, handling press communications, crafting messaging, executive bylines, and internal communications.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="earlier">
+  <span class="earlier-label">Earlier</span>
+  <span class="earlier-items">Reporter, <em>MediaPost</em> &nbsp;&middot;&nbsp; Journalist, <em>Ad Age</em> &nbsp;&middot;&nbsp; Reporter, <em>Columbia Missourian</em></span>
+</div>
+
+<div class="cta-section" id="contact">
+  <a href="mailto:feliciagreiff@gmail.com" class="cta-link">Get in Touch &#8594;</a>
+</div>
+
+</body>
+</html>
