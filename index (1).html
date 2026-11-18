@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felicia Greiff | Communications & Thought Leadership</title>
+<meta name="description" content="Felicia Greiff is a communications leader focused on corporate and brand storytelling, executive communications, and thought leadership.">
+<link rel="icon" type="image/svg+xml" href="fg-monogram.svg">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family: 'Lora', Georgia, serif;
+  background: #fff;
+  color: #111;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 2.5rem;
+}
+.nav-name { display: inline-flex; align-items: center; gap: 0.8rem; font-size: 1.05rem; font-weight: 400; text-decoration: none; color: #111; }
+.nav-monogram { width: 42px; height: 42px; display: block; flex: none; }
+.nav-right { display: flex; align-items: center; gap: 2rem; }
+.nav-right a { font-size: 0.95rem; color: #111; text-decoration: none; }
+.nav-right a:hover { text-decoration: underline; }
+
+.hero {
+  padding: 3.5rem 2.5rem 0;
+  max-width: 800px;
+}
+.hero-text {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.75;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.hero-text strong { font-weight: 400; }
+
+hr { border: none; border-top: 1px solid #e4e4e4; margin: 0 2.5rem; }
+
+.body-text {
+  padding: 1.5rem 2.5rem 2rem;
+  max-width: 760px;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.75;
+  color: #111;
+}
+.body-text p + p { margin-top: 1.5rem; }
+.body-text a { color: #111; }
+
+.exp-section { padding: 1rem 2.5rem 5rem; }
+
+.exp-item {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2.5rem;
+  padding: 3rem 0;
+  border-bottom: 1px solid #e4e4e4;
+}
+.exp-item:first-child { border-top: 1px solid #e4e4e4; }
+.exp-item:last-child { border-bottom: none; }
+
+.exp-company {
+  font-size: clamp(1.4rem, 2.2vw, 1.8rem);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 0.5rem;
+}
+.exp-role {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.2rem;
+  font-style: italic;
+}
+.exp-years {
+  font-size: 0.82rem;
+  color: #aaa;
+  letter-spacing: 0.02em;
+}
+
+.exp-right {
+  padding-top: 2.5rem;
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  line-height: 1.78;
+  color: #333;
+}
+.exp-right p + p { margin-top: 1rem; }
+.exp-right a { color: #111; }
+
+.beliefs-section {
+  padding: 1rem 2.5rem 5rem;
+}
+.beliefs-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem 4rem;
+  max-width: 860px;
+}
+.belief-item {
+  padding: 0.6rem 0;
+  max-width: 680px;
+}
+.belief-title {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 0.35rem;
+}
+.belief-body {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  line-height: 1.7;
+  color: #555;
+}
+
+.earlier {
+  padding: 2rem 2.5rem 3rem;
+  display: flex;
+  gap: 3rem;
+  align-items: baseline;
+  border-top: 1px solid #e4e4e4;
+}
+.earlier-label {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  color: #bbb;
+  white-space: nowrap;
+  font-style: italic;
+}
+.earlier-items {
+  font-size: 1rem;
+  color: #888;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.cta-section {
+  padding: 3.5rem 2.5rem 5.5rem;
+  border-top: 1px solid #e4e4e4;
+}
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 400;
+  text-decoration: none;
+  color: #111;
+  border-bottom: 1.5px solid #111;
+  padding-bottom: 0.05rem;
+  transition: opacity 0.2s;
+}
+.cta-link:hover { opacity: 0.4; }
+
+.exp-subrole { margin-bottom: 1.75rem; }
+.exp-subrole-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #111;
+  margin-bottom: 0.5rem;
+}
+.exp-subrole-years {
+  font-weight: 400;
+  color: #aaa;
+  font-size: 0.82rem;
+  margin-left: 0.5rem;
+}
+.consulting-break {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1.5rem 0 0.75rem;
+}
+.consulting-line {
+  flex: 1;
+  height: 1px;
+  background: #e4e4e4;
+}
+.consulting-label {
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #bbb;
+  white-space: nowrap;
+  font-family: -apple-system, 'Helvetica Neue', sans-serif;
+}
+.consulting-interlude {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 2.5rem;
+  padding: 0 0;
+}
+.consulting-interlude-left { padding-top: 3rem; }
+.consulting-interlude-right { padding: 3rem 0 1.5rem; border-top: none; }
+.consulting-desc {
+  font-size: clamp(0.9rem, 1.3vw, 1rem);
+  color: #333;
+  font-style: normal;
+  line-height: 1.78;
+}
+.section-label {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #111;
+  margin-bottom: 1.5rem;
+  margin-top: 2rem;
+  font-family: 'Lora', Georgia, serif;
+  letter-spacing: 0;
+  text-transform: none;
+}
+@media (max-width: 600px) {
+  nav { padding: 1.1rem 1.25rem; gap: 1rem; }
+  .nav-right { gap: 1rem; }
+  .nav-monogram { width: 34px; height: 34px; }
+  .hero { padding: 2.5rem 1.25rem 0; }
+  .body-text { padding: 1.5rem 1.25rem 2rem; }
+  .exp-section, .beliefs-section { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .exp-item, .consulting-interlude { grid-template-columns: 1fr; gap: 0.5rem; }
+  .exp-right, .consulting-interlude-left, .consulting-interlude-right { padding-top: 0.5rem; }
+  .earlier { padding-left: 1.25rem; padding-right: 1.25rem; gap: 1rem; flex-wrap: wrap; }
+  .cta-section { padding-left: 1.25rem; padding-right: 1.25rem; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-name" aria-label="Felicia Greiff — home"><img class="nav-monogram" src="fg-monogram.svg" alt="FG monogram"><span>Felicia Greiff</span></a>
+  <div class="nav-right">
+    <a href="contact.html">Contact Me</a>
+    <a href="https://linkedin.com/in/feliciagreiff" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">in</a>
+    <a href="https://x.com/feliciagreiff" target="_blank" rel="noopener noreferrer" aria-label="X">&#x1D54F;</a>
+  </div>
+</nav>
+
+<div class="hero">
+  <p class="hero-text">Felicia Greiff is a communications leader who helps organizations tell compelling stories, build credibility, and give their leaders a distinctive voice. Trained as a journalist, she brings editorial judgment and a human perspective to corporate communications, brand storytelling, and thought leadership.</p>
+</div>
+
+
+
+<div class="body-text">
+  <p>Her work spans corporate and brand communications, executive thought leadership, media relations, and editorial strategy. She works with leaders to make complex ideas clear, develop distinctive narratives, and communicate with credibility. A journalist by training, she values writing that is precise, compelling, and grounded in a real understanding of its audience. <a href="contact.html">Get in touch.</a></p>
+</div>
+
+
+
+<div class="exp-section">
+  <p class="section-label">Experience</p>
+
+  <div class="exp-item">
+    <div class="exp-left">
+      <div class="exp-company">Wisq</div>
+      <div class="exp-role">Head of Brand &amp; Content</div>
+      <div class="exp-years">2024&#8211;Present</div>
+    </div>
+    <div class="exp-right">
+      <p>Felicia returned to Wisq as Head of Brand &amp; Content, leading the company narrative, messaging, public relations, editorial strategy, and executive communications. She works with executives on thought leadership and external positioning, including major company announcements, while overseeing content and events strategy and collaborating with Product, Sales, and Marketing.</p>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-left">
+      <div class="exp-company">Independent Consulting</div>
+      <div class="exp-role">Freelance Writer &amp; Content Strategist</div>
+      <div class="exp-years">2023&#8211;2024</div>
+    </div>
+    <div class="exp-right">
+      <p>Provided independent freelance writing and content strategy services, including editorial planning, blog writing, social media strategy, virtual event coordination, and communications support.</p>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-left">
+      <div class="exp-company">Wisq</div>
+      <div class="exp-role">Content Marketing Lead</div>
+      <div class="exp-years">2022&#8211;2023</div>
+    </div>
+    <div class="exp-right">
+      <p>Felicia joined Wisq as Content Marketing Lead, building its content function from the ground up. She developed editorial programs, eBooks, articles, and lead-generation assets that supported demand generation and helped establish the company’s point of view on workplace issues.</p>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-left">
+      <div class="exp-company">Terminal</div>
+      <div class="exp-role">Senior Content &amp; Social Media Manager</div>
+      <div class="exp-years">2021&#8211;2022</div>
+    </div>
+    <div class="exp-right">
+      <p>At Terminal, a marketplace for global software engineers, Felicia led content and brand strategy for engineering talent and hiring leaders. She built the editorial calendar, launched original research, produced a major virtual event, and managed the PR agency and external vendors, alongside demand generation initiatives.</p>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-left">
+      <div class="exp-company">Cadent</div>
+      <div class="exp-role">PR &amp; Content Marketing Director</div>
+      <div class="exp-years">2018&#8211;2021</div>
+    </div>
+    <div class="exp-right">
+      <p>At Cadent, a connected TV advertising platform, Felicia led content and public relations across North American and European teams. She developed executive thought leadership and coordinated owned, earned, and paid communications, including social campaigns and event sponsorships, to position Cadent with brand marketers. Cadent was acquired by Novacap in 2023, after her tenure.</p>
+    </div>
+  </div>
+
+  <div class="exp-item">
+    <div class="exp-left">
+      <div class="exp-company">Turn</div>
+      <div class="exp-role">Content Marketing Manager</div>
+      <div class="exp-years">2016&#8211;2018</div>
+    </div>
+    <div class="exp-right">
+      <p>At Turn, a programmatic advertising platform, Felicia led content strategy to build the company’s industry presence. During its 2017 acquisition by Amobee for $310 million, she oversaw PR efforts, including press communications, messaging, executive bylines, internal communications, social promotion, and coordination with Singtel’s global offices.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="earlier">
+  <span class="earlier-label">Earlier</span>
+  <span class="earlier-items">Reporter, <em>MediaPost</em> &nbsp;&middot;&nbsp; Journalist, <em>Ad Age</em> &nbsp;&middot;&nbsp; Reporter, <em>Columbia Missourian</em> &nbsp;&middot;&nbsp; Marketing Intern, <em>American Century Investments</em></span>
+</div>
+
+<div class="beliefs-section">
+  <p class="section-label">Guiding Principles</p>
+
+  <div class="belief-item">
+    <h3 class="belief-title">Show, don&#8217;t tell.</h3>
+    <p class="belief-body">Trust the reader to draw their own conclusions.</p>
+  </div>
+
+  <div class="belief-item">
+    <h3 class="belief-title">Write like you speak.</h3>
+    <p class="belief-body">Make it conversational. It helps the reader feel connected to you and shows them there&#8217;s a person behind the writing.</p>
+  </div>
+
+  <div class="belief-item">
+    <h3 class="belief-title">Have fun.</h3>
+    <p class="belief-body">Joy and playfulness come through in your writing.</p>
+  </div>
+
+  <div class="belief-item">
+    <h3 class="belief-title">The 4 C&#8217;s: clarity, concision, cohesion, and credibility.</h3>
+    <p class="belief-body">Remember these and you&#8217;ll serve the reader well.</p>
+  </div>
+
+</div>
+
+<div class="cta-section">
+  <a href="contact.html" class="cta-link">Get in Touch &#8594;</a>
+</div>
+
+</body>
+</html>
